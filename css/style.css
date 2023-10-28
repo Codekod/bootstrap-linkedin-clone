@@ -1,0 +1,157 @@
+/* Navbar */
+.navbarbg {
+  height: 55px;
+  background-color: white;
+  position: fixed; /* Navbar'ı yukarı sabitlendi */
+  top: 0; /* Yukarıdan boşluk bırakıldı */
+  width: 100%; /* Navbar'ın genişliğini ayarlandı*/
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Kenarlık ekleyin eklendi*/
+  display: flex;
+  justify-content: space-between; /* Logoyu sola, diğer içeriği sağa yerleştirildi */
+  padding: 0 20px; /* Logo ve içerik arasındaki boşluğu ayarlandı */
+}
+
+/* Logo */
+.navbarbg .logo {
+  margin-left: 20px; /* Logo için soldan boşluk eklendi */
+}
+
+/* Arama Alanı */
+input.searche {
+  height: 36px;
+  max-width: 500px;
+  background-color: #eef3f8;
+  border: 0;
+  margin-right: 20px; /* Sağdan boşluk bırakıldı */
+  padding-right: 30px; /* Placeholder için sağdan boşluk bırakıldı */
+  background-image: url(/bootstraplinkedinclone/assets/search-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 7%;
+}
+
+input.searche::placeholder {
+  font-size: 14px;
+  color: gray;
+  background-position: right center; /* Placeholder ikonunu sağa yerleştirildi */
+}
+
+/* İçerik Alanı */
+.body {
+  background-color: #f3f2ef;
+  margin-top: 55px; /* Navbar'ı içeriğin üzerine yerleştirildi */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 6fr 3fr; /* Sol 2 birim, Orta 6 birim, Sağ 3 birim */
+}
+
+/* Profil Fotoğrafı */
+.profile-photo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto; /* Profil fotoğrafını ortalandı */
+  border: 2px solid white; /* Kenarlık eklendi */
+}
+
+/* Menü Metinleri ve İkonları */
+.menutext {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  text-align: center; /* Metinler ve ikonlar ortalandı */
+  margin-top: 5px;
+  font-weight: lighter;
+}
+
+.menutext:hover {
+  color: black;
+}
+
+/* Kategoriler */
+.categories {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0a66c2;
+}
+
+/* Sağ Panele Sticky Pozisyon Verme */
+.right-panel {
+  position: sticky;
+  top: 4rem;
+  overflow: visible;
+}
+
+/* Gönderi Başlat Placeholder */
+input.content::placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/bootstraplinkedinclone/assets/edit-regular.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-left: 25px; /* Placeholder için sola boşluk bırakıldı */
+}
+
+/* Renkler */
+button.post-type.photo {
+  fill: #70B5F9; /* Fotoğraf rengi */
+}
+
+button.post-type.video {
+  fill: #7FC15E; /* Video rengi */
+}
+
+button.post-type.event {
+  fill: #E7A33E; /* Etkinlik rengi */
+}
+
+button.post-type.text {
+  fill: #F5987E; /* Yazı Yaz rengi */
+}
+
+/* Gönderi Bilgileri */
+.post-details {
+  text-align: center;
+}
+
+/* Beğenme, Kalp ve Alkış Butonları */
+button.like, button.heart, button.applause {
+  margin: 8px; /* Beğenme, Kalp ve Alkış butonlarına boşluk verildi */
+}
+
+/* Sağ Panel Logoları */
+.right-panel .logo {
+  display: flex;
+  align-items: center; /* Logoları yan yana hizalandı */
+  margin-bottom: 10px; /* Logolar arasına boşluk ekledi */
+}
+
+/* Bugünün En Çok İzlenen Eğitimleri */
+.top-courses {
+  width: 100%; /* Genişliği ayarlandı */
+}
+
+/* Mesajlaşma Alanı */
+.messaging {
+  width: 300px;
+  background-color: white;
+}
+
+/* İçerikteki Inline CSS'leri Düzenleme */
+.inline-css {
+  /* İçerikteki inline CSS'leri düzenlendi */
+}
+
+/* Linklerin Yan Yana getirildi */
+.links {
+  display: flex;
+}
+
+/* Altta Sticky Pozisyon ve Overflow */
+.bottom-panel {
+  position: sticky;
+  bottom: 4rem;
+  overflow: visible;
+}
